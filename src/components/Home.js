@@ -26,6 +26,7 @@ const Home = () => {
                 return (
                     <div key={character._id}>
                         <h3>{character.name}</h3>
+                        <p>{character.element}</p>
                     </div>
                 )
             })}
