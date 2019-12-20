@@ -18,7 +18,6 @@ const Home = () => {
     useEffect(() => {
         fetchCharacters();
     },[])
-    console.log("Data from api....", data)
     return (
         <div>
             <h1>Hello</h1>
