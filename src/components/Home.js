@@ -7,7 +7,6 @@ const Home = () => {
     const fetchCharacters = () => {
         axios.get(`${epicUrl}hero`)
         .then(res => {
-            console.log(res.data.results)
             setData(res.data.results)
         })
         .catch(err => {
