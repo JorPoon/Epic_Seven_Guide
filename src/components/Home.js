@@ -19,7 +19,7 @@ const Home = () => {
     },[])
     return (
         <div>
-            <h1>Hello</h1>
+            <h1>Orbis</h1>
             {data.map(character => {
                 return (
                     <div key={character._id}>
