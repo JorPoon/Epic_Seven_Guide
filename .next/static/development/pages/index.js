@@ -4411,7 +4411,8 @@ var PostLink = function PostLink(props) {
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/post?title=".concat(props.title),
+    href: "/p/[id]",
+    as: "/p/".concat(props.id),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
@@ -4423,47 +4424,47 @@ var PostLink = function PostLink(props) {
       lineNumber: 7
     },
     __self: this
-  }, props.title)));
+  }, props.id)));
 };
 
 function Blog() {
   return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }, "My Blog"), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, __jsx(PostLink, {
-    title: "Hello Next.js",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 16
     },
     __self: this
-  }), __jsx(PostLink, {
-    title: "Learn Next.js is awesome",
+  }, __jsx(PostLink, {
+    id: "hello-nextjs",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
   }), __jsx(PostLink, {
-    title: "Deploy apps with Zeit",
+    id: "learn-nextjs",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
+    },
+    __self: this
+  }), __jsx(PostLink, {
+    id: "deploy-nextjs",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
     },
     __self: this
   })));
@@ -4471,7 +4472,7 @@ function Blog() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjormpoon%2FDesktop%2FPersonal%20Projects%2Fepic_seven_guide%2Fpages%2Findex.js ***!
   \**********************************************************************************************************************************************************/
@@ -4494,5 +4495,5 @@ module.exports = dll_82519ec661270f7f484f;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
