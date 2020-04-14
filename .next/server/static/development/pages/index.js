@@ -115,40 +115,29 @@ const linkStyle = {
 };
 
 const Header = () => __jsx("div", {
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8
-  },
-  __self: undefined
+    lineNumber: 8,
+    columnNumber: 3
+  }
 }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
   href: "/",
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9
-  },
-  __self: undefined
+    lineNumber: 9,
+    columnNumber: 5
+  }
 }, __jsx("a", {
   style: linkStyle,
+  __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
-}, "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/about",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}, __jsx("a", {
-  style: linkStyle,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 13
-  },
-  __self: undefined
-}, "About")));
+    lineNumber: 10,
+    columnNumber: 7
+  }
+}, "Home")));
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
 
@@ -165,8 +154,11 @@ const Header = () => __jsx("div", {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/jormpoon/Desktop/Personal Projects/epic_seven_guide/components/Homepage.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 const Homepage = () => {
@@ -174,17 +166,32 @@ const Homepage = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 10,
       columnNumber: 9
     }
   }, __jsx("h1", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 11,
       columnNumber: 13
     }
-  }, "Welcome to Epic Seven Guides by ZIROKUDOS"));
+  }, "Welcome to Epic Seven Guides by ZIROKUDOS"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/character",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 13
+    }
+  }, __jsx("a", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 17
+    }
+  }, "Heroes")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Homepage);
@@ -1890,26 +1897,25 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const Index = props => {
-  console.log(props.results);
   return __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 7,
       columnNumber: 9
     }
   }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 8,
       columnNumber: 13
     }
   }), __jsx("h1", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 9,
       columnNumber: 13
     }
   }, "Hello From EPIC SEVEN"), __jsx(_components_Homepage__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -1917,26 +1923,15 @@ const Index = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 10,
       columnNumber: 13
     }
-  }), props.results.map(item => {
-    return __jsx("h3", {
-      key: item.id,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14,
-        columnNumber: 17
-      }
-    }, item.name);
   }));
 };
 
 async function getServerSideProps() {
   const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('https://api.epicsevendb.com/hero');
   const list = await res.json();
-  console.log(list);
   return {
     props: list
   };
