@@ -23,26 +23,25 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var Index = function Index(props) {
-  console.log(props.results);
   return __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 7,
       columnNumber: 9
     }
   }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 8,
       columnNumber: 13
     }
   }), __jsx("h1", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 9,
       columnNumber: 13
     }
   }, "Hello From EPIC SEVEN"), __jsx(_components_Homepage__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -50,18 +49,9 @@ var Index = function Index(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 10,
       columnNumber: 13
     }
-  }), props.results.map(function (item) {
-    return __jsx("h3", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14,
-        columnNumber: 17
-      }
-    }, item.name);
   }));
 };
 
@@ -71,4 +61,4 @@ var __N_SSP = true;
 /***/ })
 
 })
-//# sourceMappingURL=index.js.915f9ac4ba7df042a48b.hot-update.js.map
+//# sourceMappingURL=index.js.5bb475395b42f0cf02f0.hot-update.js.map
