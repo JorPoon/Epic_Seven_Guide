@@ -7,17 +7,11 @@ const Index = (props) => {
         <div>
             <Header/>
             <h1>Hello From EPIC SEVEN</h1>
-            <Homepage list={props.list}/>
+            <Homepage />
         </div>
     )
 }
 
-export async function getServerSideProps() {
-    const res = await fetch('https://api.epicsevendb.com/hero')
-    const list = await res.json() 
-    return {
-        props: list
-    }
-}
+
 
 export default Index
