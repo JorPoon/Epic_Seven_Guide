@@ -7,10 +7,10 @@ interface Details {
 
 
 
-const HeroesDetail: React.FC <Details> = () => {
+const HeroesDetail: React.FC <Details> = (props) => {
     return (
         <div>
-            <h3>Hero's Name</h3>
+            <h3>{props.name}</h3>
         </div>
     )
 }

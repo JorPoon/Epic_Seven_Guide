@@ -1,4 +1,5 @@
 import fetch from 'isomorphic-unfetch'
+import HeroesDetail from "../components/HeroesDetail"
 
 
 
@@ -8,7 +9,7 @@ const Hero = (props) => {
         <div>
             Heroes of Epic Seven
             {props.results.map(hero => {
-                return <h2>{hero.name}</h2>
+                return <HeroesDetail name={hero.name}/>
             })}
         </div>
     )
