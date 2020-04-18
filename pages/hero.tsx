@@ -9,7 +9,10 @@ const Hero = (props) => {
         <div>
             Heroes of Epic Seven
             {props.results.map(hero => {
-                return <HeroesDetail name={hero.name}/>
+                return <HeroesDetail 
+                        attribute={hero.attribute}
+                        name={hero.name}
+                        />
             })}
         </div>
     )

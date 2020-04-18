@@ -17,22 +17,31 @@ var _this = undefined,
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-var HeroesDetail = function HeroesDetail(props) {
+var HeroesDetail = function HeroesDetail(_ref) {
+  var name = _ref.name,
+      attribute = _ref.attribute;
   return __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 9
     }
   }, __jsx("h3", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 13
     }
-  }, props.name));
+  }, name), __jsx("p", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 13
+    }
+  }, attribute));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HeroesDetail);
@@ -104,6 +113,7 @@ var Hero = function Hero(props) {
     }
   }, "Heroes of Epic Seven", props.results.map(function (hero) {
     return __jsx(_components_HeroesDetail__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      attribute: hero.attribute,
       name: hero.name,
       __self: _this,
       __source: {
@@ -120,7 +130,7 @@ var __N_SSP = true;
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!**************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fhero&absolutePagePath=%2FUsers%2Fjormpoon%2FDesktop%2FPersonal%20Projects%2Fepic_seven_guide%2Fpages%2Fhero.tsx ***!
   \**************************************************************************************************************************************************************/
@@ -143,5 +153,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=hero.js.map

@@ -1,16 +1,18 @@
 import React, {FunctionComponent} from 'react';
 
 interface Details {
-    name: string
+    name: string,
+    attribute: string
 }
 
 
 
 
-const HeroesDetail: React.FC <Details> = (props) => {
+const HeroesDetail: React.FC <Details> = ({name, attribute}) => {
     return (
         <div>
-            <h3>{props.name}</h3>
+            <h3>{name}</h3>
+            <p>{attribute}</p>
         </div>
     )
 }
