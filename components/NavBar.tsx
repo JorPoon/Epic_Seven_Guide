@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const NavBar: React.FC = () => {
     return (
-        <div>
+        <div className="nav-bar">
             <Link href="/index" as="/home">
                 Home
             </Link>
