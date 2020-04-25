@@ -10,12 +10,12 @@ interface Details {
 
 
 
-const HeroesDetail: React.FC <Details> = ({name, attribute}) => {
+const HeroesDetail: React.FC <Details> = ({name, attribute, role, assets}) => {
     return (
         <div>
             <h3>{name}</h3>
             <p>{attribute}</p>
-            <p></p>
+            <p>{role}</p>
         </div>
     )
 }

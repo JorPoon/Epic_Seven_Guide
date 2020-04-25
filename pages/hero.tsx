@@ -12,6 +12,7 @@ const Hero = (props) => {
                 return <HeroesDetail 
                         attribute={hero.attribute}
                         name={hero.name}
+                        role={hero.role}
                         />
             })}
         </div>
