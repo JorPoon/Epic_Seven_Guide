@@ -4,7 +4,7 @@ interface Details {
     name: string,
     attribute: string
     role: string,
-    assets?: 
+    assets?: []
 }
 
 
