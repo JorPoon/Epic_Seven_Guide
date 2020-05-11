@@ -1,45 +1,28 @@
-import { useRouter } from 'next/router';
-import Markdown from 'react-markdown';
-import Layout from '../../components/MyLayout';
+import {getAllCharacterIds, getCharacterData} from '../../lib/characters'
 
-export default () => {
-  const router = useRouter();
+export const Character = () => {
   return (
-    <Layout>
-      <h1>{router.query.id}</h1>
-      <div className="markdown">
-        <Markdown
-          source={`
-This is our blog post.
-Yes. We can have a [link](/link).
-And we can have a title as well.
+    <div>
+      <h1>Hello</h1>
+    </div>
+  )
+}
 
-### This is a title
 
-And here's the content.
-      `}
-        />
-      </div>
-      <style jsx global>{`
-        .markdown {
-          font-family: 'Arial';
-        }
+// export async function getStaticPaths() {
+//   const paths = getAllCharacterIds()
+//   return {
+//     paths,
+//     fallback: false
+//   }
+// }
 
-        .markdown a {
-          text-decoration: none;
-          color: blue;
-        }
-
-        .markdown a:hover {
-          opacity: 0.6;
-        }
-
-        .markdown h3 {
-          margin: 0;
-          padding: 0;
-          text-transform: uppercase;
-        }
-      `}</style>
-    </Layout>
-  );
-};
+// export async function getStaticProps({ params }) {
+//   const characterData = getCharacterData(params.id)
+//   console.log(characterData)
+//   return {
+//     props: {
+//       characterData
+//     }
+//   }
+// }
