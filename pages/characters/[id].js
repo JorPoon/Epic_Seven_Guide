@@ -2,11 +2,16 @@
 
 const Character = ({characterData}) => {
   
-  const {name} = characterData.results[0]
+  const {name, rarity, attribute, role, assets} = characterData.results[0]
   
   return (
     <div>
       <h1>{name}</h1>
+      <img src={assets["image"]} alt="aramintha" />
+      <p>{rarity}</p>
+      <p>{attribute}</p>
+      <p>{role}</p>
+      
     </div>
   )
 }
