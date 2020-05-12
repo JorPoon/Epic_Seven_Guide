@@ -22,7 +22,6 @@ const Hero = (props) => {
 export async function getServerSideProps() {
     const res = await fetch('https://api.epicsevendb.com/hero')
     const list = await res.json() 
-    console.log(list)
 
     return {
         props: list

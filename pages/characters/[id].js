@@ -1,6 +1,7 @@
-import {getAllCharacterIds, getCharacterData} from '../../lib/characters'
+// import {getAllCharacterIds, getCharacterData} from '../../lib/characters'
 
-export const Character = () => {
+const Character = (props) => {
+  console.log(props)
   return (
     <div>
       <h1>Hello</h1>
@@ -9,20 +10,31 @@ export const Character = () => {
 }
 
 
-// export async function getStaticPaths() {
-//   const paths = getAllCharacterIds()
-//   return {
-//     paths,
-//     fallback: false
-//   }
-// }
+export async function getStaticPaths() {
+  const res = await fetch('https://api.epicsevendb.com/hero')
+  const lists = await res.json() 
+  console.log("hello")
+  console.log(lists.results)
+  const paths = lists.results.map(list => ({
+    params: {id: list["_id"]},
+  }))
+  //lists.map(list => `/characters/${list.id}`)
+  return {
+    paths,
+    fallback: false
+  }
+}
 
-// export async function getStaticProps({ params }) {
-//   const characterData = getCharacterData(params.id)
-//   console.log(characterData)
-//   return {
-//     props: {
-//       characterData
-//     }
-//   }
-// }
+export async function getStaticProps({ params }) {
+  const res = await fetch(`https://api.epicsevendb.com/hero/${params.id}`)
+  const characterData = await res.json()
+  console.log(characterData)
+  return {
+    props: {
+      characterData
+    }
+  }
+}
+
+export default Character
+
