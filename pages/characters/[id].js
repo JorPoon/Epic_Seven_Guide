@@ -1,10 +1,12 @@
 
 
-const Character = (props) => {
-  console.log(props)
+const Character = ({characterData}) => {
+  
+  const {name} = characterData.results[0]
+  
   return (
     <div>
-      <h1>Hello</h1>
+      <h1>{name}</h1>
     </div>
   )
 }
