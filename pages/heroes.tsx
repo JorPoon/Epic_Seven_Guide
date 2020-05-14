@@ -1,24 +1,26 @@
 import fetch from 'isomorphic-unfetch'
 import HeroesDetail from "../components/HeroesDetail"
-
+import { Container, Grid } from '@material-ui/core'
 
 
 
 const heroes = (props) => {
 
     return (
-        <div>
-            <h1>Heroes of Epic Seven</h1>
-            {props.results.map(hero => {
-                return (  
-                            <HeroesDetail 
-                                attribute={hero.attribute}
-                                name={hero.name}
-                                role={hero.role}
-                            />
-                        )
-            })}
-        </div>
+        <Container>
+            <Grid container justify="center" alignItems="center" direction="column">
+                <h1>Heroes</h1>
+                {props.results.map(hero => {
+                    return (  
+                                <HeroesDetail 
+                                    attribute={hero.attribute}
+                                    name={hero.name}
+                                    role={hero.role}
+                                />
+                            )
+                })}
+            </Grid>
+        </Container>
     )
 }
 
