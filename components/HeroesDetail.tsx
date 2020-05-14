@@ -16,7 +16,7 @@ const HeroesDetail: React.FC <Details> = ({name, attribute, role, assets}) => {
    
     return (
         <>
-        <Link href="/heroes/[id]" as={`/heroes/${name.toLowerCase()}`}>
+        <Link href="/hero/[id]" as={`/hero/${name.toLowerCase()}`}>
             <a>
                 <h3>
                     {name}

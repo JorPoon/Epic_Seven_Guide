@@ -1,25 +1,21 @@
 import fetch from 'isomorphic-unfetch'
 import HeroesDetail from "../components/HeroesDetail"
-import Link from "next/link"
 
 
 
-const Hero = (props) => {
+
+const heroes = (props) => {
 
     return (
         <div>
-            Heroes of Epic Seven
+            <h1>Heroes of Epic Seven</h1>
             {props.results.map(hero => {
-                const {name} = hero.name.toLowerCase()
-                return (
-                        <Link href="/heroes/[id]" as={`/heroes/${name}`}>
+                return (  
                             <HeroesDetail 
                                 attribute={hero.attribute}
                                 name={hero.name}
                                 role={hero.role}
                             />
-                            {/* <a>{hero.name}</a> */}
-                        </Link>
                         )
             })}
         </div>
@@ -35,4 +31,4 @@ export async function getServerSideProps() {
     }
 }
 
-export default Hero
+export default heroes
