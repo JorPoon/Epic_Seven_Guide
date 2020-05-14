@@ -8,7 +8,7 @@ interface Props {
 const Homepage: React.FC <Props> = () => {
     return (
         <div>
-            <h1>Welcome to Epic Seven Guides by ZIROKUDOS</h1>
+            <h2>Content by ZIROKUDOS</h2>
             <Link href="/heroes">
                 <a>Heroes</a>
             </Link>

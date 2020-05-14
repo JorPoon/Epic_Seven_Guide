@@ -1,12 +1,14 @@
 import Homepage from "../components/Homepage"
-import fetch from 'isomorphic-unfetch'
+import { Container, Grid } from '@material-ui/core'
 
 const Index = (props) => {
     return (
-        <div>
-            <h1>Hello From EPIC SEVEN</h1>
-            <Homepage />
-        </div>
+        <Container>
+            <Grid container alignItems="center" justify="center" direction="column">
+                <h1>EPIC SEVEN INFO PUB</h1>
+                <Homepage />
+            </Grid>
+        </Container>
     )
 }
 
