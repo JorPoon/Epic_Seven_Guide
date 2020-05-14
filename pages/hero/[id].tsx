@@ -12,7 +12,6 @@ const Character = ({characterData}) => {
       <p>{attribute}</p>
       <p>{role}</p>
       <p>{zodiac}</p>
-      
     </div>
   )
 }
