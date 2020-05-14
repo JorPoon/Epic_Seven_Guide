@@ -3,17 +3,20 @@ import HeroesDetail from "../components/HeroesDetail"
 
 
 
-const Hero = (props) => {
-    console.log(props.results)
+
+const heroes = (props) => {
+
     return (
         <div>
-            Heroes of Epic Seven
+            <h1>Heroes of Epic Seven</h1>
             {props.results.map(hero => {
-                return <HeroesDetail 
-                        attribute={hero.attribute}
-                        name={hero.name}
-                        role={hero.role}
-                        />
+                return (  
+                            <HeroesDetail 
+                                attribute={hero.attribute}
+                                name={hero.name}
+                                role={hero.role}
+                            />
+                        )
             })}
         </div>
     )
@@ -28,4 +31,4 @@ export async function getServerSideProps() {
     }
 }
 
-export default Hero
+export default heroes

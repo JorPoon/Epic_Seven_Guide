@@ -9,7 +9,7 @@ const Homepage: React.FC <Props> = () => {
     return (
         <div>
             <h1>Welcome to Epic Seven Guides by ZIROKUDOS</h1>
-            <Link href="/hero">
+            <Link href="/heroes">
                 <a>Heroes</a>
             </Link>
         </div>
