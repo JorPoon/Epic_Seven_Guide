@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/JorPoon/epic_seven_guide#readme",
   "dependencies": {
+    "@material-ui/core": "^4.9.14",
     "gray-matter": "^4.0.2",
     "install": "^0.13.0",
     "isomorphic-unfetch": "^3.0.0",
