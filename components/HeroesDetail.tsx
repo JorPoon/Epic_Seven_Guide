@@ -24,6 +24,7 @@ const HeroesDetail: React.FC <Details> = ({name, attribute, role, assets}) => {
             <Card className={classes.cardWidth}>
                 <CardMedia
                     image={assets}
+                    style={{ width: "375px", height: "130px" }}
                 />
                 <h3>{name}</h3>  
                 <p>{attribute}</p>
