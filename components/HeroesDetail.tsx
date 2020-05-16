@@ -1,13 +1,13 @@
 import React, {FunctionComponent} from 'react';
 import Link from "next/link";
-import { Card } from '@material-ui/core'
+import { Card, CardMedia } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 
 interface Details {
     name: string,
     attribute: string
     role: string,
-    assets?: []
+    assets?: string
 }
 
 const useStyles = makeStyles((theme) => ({
@@ -22,13 +22,10 @@ const HeroesDetail: React.FC <Details> = ({name, attribute, role, assets}) => {
     return (
         <Link href="/hero/[id]" as={`/hero/${name.toLowerCase()}`}>
             <Card className={classes.cardWidth}>
-            
-                <a>
-                    <h3>
-                        {name}
-                    </h3>  
-                 </a>
-            
+                <CardMedia
+                    image={assets}
+                />
+                <h3>{name}</h3>  
                 <p>{attribute}</p>
                 <p>{role}</p>
             </Card>

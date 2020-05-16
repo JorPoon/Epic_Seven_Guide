@@ -16,6 +16,7 @@ const heroes = (props) => {
                                     attribute={hero.attribute}
                                     name={hero.name}
                                     role={hero.role}
+                                    assets={hero.assets.thumbnail}
                                 />
                             )
                 })}
