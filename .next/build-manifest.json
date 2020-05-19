@@ -20,6 +20,10 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
+    "/hero/[id]": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/heroes": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
