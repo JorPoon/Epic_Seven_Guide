@@ -1,6 +1,8 @@
 import fetch from 'isomorphic-unfetch'
 import HeroesDetail from "../components/HeroesDetail"
-import { Container, Grid } from '@material-ui/core'
+import { Container, Grid } from "@material-ui/core";
+import NavBar from "../components/NavBar"
+
 
 
 
@@ -8,6 +10,7 @@ const heroes = (props) => {
 
     return (
         <Container >
+            <NavBar/>
             <h1> Heroes</h1>
             <Grid container justify="space-evenly" alignItems="center" direction="row" alignContent="space-around">
                 {props.results.map(hero => {

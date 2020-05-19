@@ -18,13 +18,18 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
     },
     media: {
-        display: "block",
         maxWidth: "100%",
-        height: "100%", 
+        maxheight: "auto", 
         paddingTop: '75%', 
+        backgroundColor: "black",
+        backgroundRepeat: "no-repeat"
+
     },
     content: {
-        background: "orange"
+        background: "white"
+    },
+    aTag: {
+        textDecoration: "none"
     }
 }))
 
@@ -32,20 +37,22 @@ const useStyles = makeStyles((theme) => ({
 const HeroesDetail: React.FC <Details> = ({name, attribute, role, assets, rarity}) => {
    const classes = useStyles()
     return (
+        //Need to change how to link up pages dynamically(maybe)
         <Link href="/hero/[id]" as={`/hero/${name.toLowerCase()}`}>
-            <Card className={classes.cardWidth}>
-                <CardHeader title={name}/>
-                <CardMedia
-                    className={classes.media}
-                    image={assets}
-                />
-                <CardContent className={classes.content} >
-                     
-                    <p> Type: {attribute}</p>
-                    <p> Class: {role === "manauser" ? "soul weaver" : role}</p>
-                    <p> Rarity: {rarity} stars</p>
-                </CardContent>
-            </Card>
+            <a className={classes.aTag}>
+                <Card className={classes.cardWidth}>
+                    <CardHeader title={name}/>
+                    <CardMedia
+                        className={classes.media}
+                        image={assets}
+                    />
+                    <CardContent className={classes.content} >
+                        <p> Type: {attribute}</p>
+                        <p> Class: {role === "manauser" ? "soul weaver" : role}</p>
+                        <p> Rarity: {rarity} stars</p>
+                    </CardContent>
+                </Card>
+            </a>
         </Link>
     )
 }

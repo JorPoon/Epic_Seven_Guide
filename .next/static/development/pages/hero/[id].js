@@ -45,7 +45,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!***********************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fhero%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fjormpoon%2FDesktop%2FPersonal%20Projects%2Fepic_seven_guide%2Fpages%2Fhero%2F%5Bid%5D.tsx&hotRouterUpdates=false ***!
   \***********************************************************************************************************************************************************************************************************/
@@ -68,4 +68,4 @@ eval("module.exports = dll_2adc2403d89adc16ead0;//# sourceURL=[module]\n//# sour
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
