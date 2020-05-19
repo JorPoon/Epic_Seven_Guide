@@ -7,9 +7,9 @@ import { Container, Grid } from '@material-ui/core'
 const heroes = (props) => {
 
     return (
-        <Container>
-            <Grid container justify="center" alignItems="center" direction="column">
-                <h1>Heroes</h1>
+        <Container >
+            <h1> Heroes</h1>
+            <Grid container justify="space-evenly" alignItems="center" direction="row" alignContent="space-around">
                 {props.results.map(hero => {
                     return (  
                                 <HeroesDetail 
@@ -17,6 +17,7 @@ const heroes = (props) => {
                                     name={hero.name}
                                     role={hero.role}
                                     assets={hero.assets.thumbnail}
+                                    rarity={hero.rarity}
                                 />
                             )
                 })}

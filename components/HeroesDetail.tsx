@@ -7,21 +7,26 @@ interface Details {
     name: string,
     attribute: string
     role: string,
-    assets?: string
+    assets?: string,
+    rarity: number
 }
 
 const useStyles = makeStyles((theme) => ({
     cardWidth: {
-        minWidth: 325
+        minWidth: 225,
+        margin: 10,
+        alignContent: "center",
+        justifyItems: "center"
+
     },
     media: {
-        width: 375,
+        width: 275,
         height: 130
     }
 }))
 
 
-const HeroesDetail: React.FC <Details> = ({name, attribute, role, assets}) => {
+const HeroesDetail: React.FC <Details> = ({name, attribute, role, assets, rarity}) => {
    const classes = useStyles()
     return (
         <Link href="/hero/[id]" as={`/hero/${name.toLowerCase()}`}>
@@ -31,8 +36,9 @@ const HeroesDetail: React.FC <Details> = ({name, attribute, role, assets}) => {
                     image={assets}
                 />
                 <h3>{name}</h3>  
-                <p>{attribute}</p>
-                <p>{role}</p>
+                <p> Type: {attribute}</p>
+                <p> Class: {role === "manauser" ? "soul weaver" : role}</p>
+                <p> Rarity: {rarity} stars</p>
             </Card>
         </Link>
     )
