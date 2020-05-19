@@ -13,6 +13,10 @@ interface Details {
 const useStyles = makeStyles((theme) => ({
     cardWidth: {
         minWidth: 325
+    },
+    media: {
+        width: 375,
+        height: 130
     }
 }))
 
@@ -23,8 +27,8 @@ const HeroesDetail: React.FC <Details> = ({name, attribute, role, assets}) => {
         <Link href="/hero/[id]" as={`/hero/${name.toLowerCase()}`}>
             <Card className={classes.cardWidth}>
                 <CardMedia
+                    className={classes.media}
                     image={assets}
-                    style={{ width: "375px", height: "130px" }}
                 />
                 <h3>{name}</h3>  
                 <p>{attribute}</p>
