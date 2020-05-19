@@ -1,6 +1,6 @@
 import React, {FunctionComponent} from 'react';
 import Link from "next/link";
-import { Card, CardMedia } from '@material-ui/core'
+import { Card, CardMedia, CardContent } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 
 interface Details {
@@ -16,12 +16,17 @@ const useStyles = makeStyles((theme) => ({
         minWidth: 225,
         margin: 10,
         alignContent: "center",
-        justifyItems: "center"
+        alignItems: "center",
+        justifyItems: "center",
+        justifyContent: "center"
 
     },
     media: {
         width: 275,
         height: 130
+    },
+    content: {
+        background: "orange"
     }
 }))
 
@@ -35,10 +40,12 @@ const HeroesDetail: React.FC <Details> = ({name, attribute, role, assets, rarity
                     className={classes.media}
                     image={assets}
                 />
-                <h3>{name}</h3>  
-                <p> Type: {attribute}</p>
-                <p> Class: {role === "manauser" ? "soul weaver" : role}</p>
-                <p> Rarity: {rarity} stars</p>
+                <CardContent className={classes.content} >
+                    <h3>{name}</h3>  
+                    <p> Type: {attribute}</p>
+                    <p> Class: {role === "manauser" ? "soul weaver" : role}</p>
+                    <p> Rarity: {rarity} stars</p>
+                </CardContent>
             </Card>
         </Link>
     )
