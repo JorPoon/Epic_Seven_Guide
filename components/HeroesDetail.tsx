@@ -1,4 +1,4 @@
-import React, {FunctionComponent} from 'react';
+import React from 'react';
 import Link from "next/link";
 import { Card, CardMedia, CardContent, CardHeader } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
