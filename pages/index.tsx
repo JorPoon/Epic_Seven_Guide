@@ -1,11 +1,11 @@
-import Homepage from "../components/Homepage"
+import Homepage from "../components/landing/Homepage"
 import { Container, Grid } from '@material-ui/core'
 
 const Index = (props) => {
     return (
         <Container>
             <Grid container alignItems="center" justify="center" direction="column">
-                <h1>EPIC SEVEN INFO PUB</h1>
+                <h1>JMP GAMES</h1>
                 <Homepage />
             </Grid>
         </Container>
