@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-unfetch'
 import HeroesDetail from "../components/HeroesDetail"
 import { Container, Grid } from "@material-ui/core";
-import NavBar from "../components/NavBar"
+import NavBar from "../components/nav/NavBar"
 
 
 
