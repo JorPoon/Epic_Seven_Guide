@@ -10,11 +10,16 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 
 const NavBar: React.FC = () => {
     return (
-        <div className="nav-bar">
-            <Link href="/index" as="/">
-                <a>Home</a>
-            </Link>
-        </div>
+        <>
+            <AppBar position="fixed">
+                <Toolbar>
+                    <Link href="/index" as="/">
+                        <a>Home</a>
+                    </Link>
+                </Toolbar>
+            </AppBar>
+            <Toolbar/>
+        </>
     )
 }
 
