@@ -8,8 +8,7 @@ const Homepage: React.FC = () => {
         <div>
             <Link href="/heroes">
                 <a>Epic Seven Heroes</a>
-            </Link>
-            
+            </Link>          
         </div>
     )
 }
