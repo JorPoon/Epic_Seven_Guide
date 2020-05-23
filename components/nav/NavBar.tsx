@@ -13,6 +13,9 @@ const NavBar: React.FC = () => {
         <>
             <AppBar position="fixed">
                 <Toolbar>
+                    <Typography variant="h6" noWrap>
+                        JMP GAMES
+                    </Typography>
                     <Link href="/index" as="/">
                         <a>Home</a>
                     </Link>
