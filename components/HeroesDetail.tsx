@@ -38,7 +38,6 @@ const useStyles = makeStyles((theme) => ({
 const HeroesDetail: React.FC <Details> = ({name, attribute, role, assets, rarity}) => {
    const classes = useStyles()
     return (
-        //Need to change how to link up pages dynamically(maybe)
         <Link href="/hero/[id]" as={`/hero/${name.toLowerCase()}`}>
             <a className={classes.aTag}>
                 <Card className={classes.cardWidth}>
