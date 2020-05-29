@@ -37,12 +37,9 @@ const NavBar: React.FC = () => {
                 <Toolbar>
                     <Typography variant="h6" noWrap>
                         JMP GAMES
-                    </Typography>
-                    
-                    <Link href="/index" as="/">
-                        <Typography variant="h6">
+                    </Typography>    
+                    <Link href="/index" as="/">  
                         <a>Home</a>
-                        </Typography>
                     </Link>
                 </Toolbar>
             </AppBar>
