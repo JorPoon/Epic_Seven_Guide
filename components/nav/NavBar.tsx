@@ -39,7 +39,7 @@ const NavBar: React.FC = () => {
                     </Link>
                 </Toolbar>
             </AppBar>
-            <Toolbar/>
+            <Toolbar id="back-to-top-anchor"/>
         </>
     )
 }
