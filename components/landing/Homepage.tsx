@@ -23,7 +23,7 @@ const Homepage: React.FC = () => {
         <>
         <CssBaseline/>
         <Container className={classes.root}>
-            <Link href="/heroes">
+            <Link href="/epicSeven">
                 <a>Epic Seven Heroes</a>
             </Link>
         </Container>
