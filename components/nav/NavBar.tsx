@@ -2,6 +2,7 @@ import Link from 'next/link';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import MenuTab from './MenuTab'
 
 
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
@@ -39,6 +40,9 @@ const NavBar: React.FC = () => {
                     <Link href="/index" as="/">  
                         <a>Home</a>
                     </Link>
+                    <MenuTab/>
+                    <MenuTab/>
+                    <MenuTab/>
                 </Toolbar>
             </AppBar>
             <Toolbar id="back-to-top-anchor"/>
