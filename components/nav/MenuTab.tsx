@@ -3,6 +3,12 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 
+interface Games {
+  name?: string,
+
+}
+
+
 const MenuTab = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
