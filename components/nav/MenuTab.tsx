@@ -9,7 +9,7 @@ interface Games {
 }
 
 
-const MenuTab = () => {
+const MenuTab: React.FC <Games> = ({name}) => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -23,7 +23,7 @@ const MenuTab = () => {
   return (
     <div>
       <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-        Games here
+        {name? name : "WIP"}
       </Button>
       <Menu
         id="MenuTab"
@@ -32,7 +32,8 @@ const MenuTab = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>props</MenuItem>
+        <MenuItem onClick={handleClose}>Heroes</MenuItem>
+        <MenuItem onClick={handleClose}>Discord</MenuItem>
       </Menu>
     </div>
   );
