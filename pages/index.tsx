@@ -9,7 +9,7 @@ const Index = (props) => {
         <NavBar/> 
         <Container>
             <Grid container alignItems="center" justify="center" direction="column">
-                <h1>WAIFU LAIFU</h1>
+                <h1>WAIFU Games</h1>
                 <Homepage />
             </Grid>
         </Container>
