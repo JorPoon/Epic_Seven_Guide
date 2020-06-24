@@ -11,7 +11,7 @@ const EpicSevenHeroes = (props) => {
     return (
         <Container >
             <NavBar/>
-            <h1> Heroes</h1>
+            <h1>Epic Seven Heroes</h1>
             <Grid container justify="space-evenly" alignItems="center" direction="row" alignContent="space-around">
                 {props.results.map(hero => {
                     return (  
