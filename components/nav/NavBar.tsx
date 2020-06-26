@@ -40,9 +40,9 @@ const NavBar: React.FC = () => {
                     <Link href="/index" as="/">  
                         <a>Home</a>
                     </Link>
-                    <MenuTab/>
-                    <MenuTab/>
-                    <MenuTab/>
+                    <MenuTab name="Epic Seven"/>
+                    <MenuTab name="Exos Heroes"/>
+                    <MenuTab name="Fate Grand"/>
                 </Toolbar>
             </AppBar>
             <Toolbar id="back-to-top-anchor"/>
