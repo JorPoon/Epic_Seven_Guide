@@ -31,6 +31,8 @@ const FateGrand = (props) => {
 
 // export async function getServerSideProps() {
 //     const res = await fetch('FGO API")
+// Url: https://api.atlasacademy.io/redoc
+// need to figure out how to access the api
 //     const list = await res.json() 
 
 //     return {
