@@ -32,6 +32,7 @@ const MenuTab: React.FC <Games> = ({name}) => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
+        <MenuItem onClick={handleClose}>Main</MenuItem>
         <MenuItem onClick={handleClose}>Heroes</MenuItem>
         <MenuItem onClick={handleClose}>Discord</MenuItem>
       </Menu>
