@@ -7,12 +7,26 @@ import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 
 
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
+
+// const epicImage = require('../../img/epicSeven.png')
+// console.log(epicImage)
+
+
+const useStyles = makeStyles((theme: Theme) => 
+createStyles({
     root: {
-      backgroundImage: "url(img/epicSevenBg.png)",
-      backgroundSize: "cover",
-      height: "500px",
+      backgroundImage: 'url(/images/epicSeven.png)',
+      // backgroundSize: "cover",
+      // height: "500px",
+      backgroundPosition: 'center', 
+      backgroundSize: 'cover', 
+      backgroundRepeat: 'no-repeat',
+      margin: 'auto',
+      height: '1000px',
+      width: '100%',
+      borderRadius: 8,
+      display: 'flex',
+      marginTop: '10px'
     }
   }),
 );
@@ -22,10 +36,11 @@ const Homepage: React.FC = () => {
     return (
         <>
         <CssBaseline/>
-        <Container className={classes.root}>
-            <Link href="/epicSeven">
+        <Container className={classes.root} >
+          {/* <img src={epicImage} alt="" className={classes.root}/> */}
+            {/* <Link href="/epicSeven">
                 <a>Epic Seven Heroes</a>
-            </Link>
+            </Link> */}
         </Container>
         </>
     )

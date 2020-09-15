@@ -35,13 +35,12 @@ const NavBar: React.FC = () => {
             <AppBar position="fixed">
                 <Toolbar>
                     <Typography variant="h6" noWrap>
-                        JMP GAMES
+                        <Link href="/index" as="/">  
+                            Gachapon Games
+                        </Link>
                     </Typography>    
-                    <Link href="/index" as="/">  
-                        <a>Home</a>
-                    </Link>
                     <MenuTab name="Epic Seven"/>
-                    <MenuTab name="Exos Heroes"/>
+                    {/* <MenuTab name="Exos Heroes"/> */}
                     <MenuTab name="Fate Grand"/>
                 </Toolbar>
             </AppBar>
