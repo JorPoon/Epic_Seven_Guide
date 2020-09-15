@@ -13,7 +13,6 @@ const Index = (props) => {
         <NavBar/> 
             <Grid container alignItems="center" justify="center" direction="column">
                 <Typography variant="h1">Gachapon Games</Typography>
-                {/* <img src="/images/epicSeven.png" alt="" width="100%" height="100%"/> */}
                 <Homepage />
             </Grid>
         <BackToTop/>
